@@ -34,7 +34,50 @@
     // }   else {
     //   console.log('maybe')
     // }
+    // let count=0
+    // let movie = 'Troy'
+    // let choice = prompt ('What is your fav movie?')
+    //   if (choice===movie) {
+    //     count++
+    //     console.log('mine too')
+    //   } else {
+    //     console.log('I hate that movie')
+    //   }
 
+    //       let food = 'pizza'
+    //         let choice2 = prompt('What is your fav food?')
+    //         if (choice2 === food) {
+    //           count++
+    //           console.log('mine too')
+    //         } else {
+    //           console.log('I hate that food')
+    //         }
+
+    //             let game = 'KH'
+    //               let choice3 = prompt('What is your fav game?')
+    //               if (choice3 === game) {
+    //                 count++
+    //                 console.log('mine too')
+    //               } else {
+    //                 console.log('I hate that game')
+    //               }
+    //               if (count ===3){
+    //                 alert (`we're besties`)
+    //               }
+
+    let score=0
+  for (let i=0; i<10; i+=1) {
+    let random=Math.floor(Math.random()*10) +1
+    console.log(random)
+    let guess=prompt('Pick a number between 1&10')
+      if (random===parseInt(guess)) {
+        score++
+        alert('Correct!')
+      }else {
+        alert('Incorrect!')
+      }
+  }
+  alert(`you got ${score} points`)
   </script>
 </body>
 </html>
